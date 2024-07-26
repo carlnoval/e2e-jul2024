@@ -1,3 +1,7 @@
+# sensitive information
+.env
+
+# playwright default gitignores
 node_modules/
 /test-results/
 /playwright-report/
