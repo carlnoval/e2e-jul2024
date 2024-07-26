@@ -8,12 +8,12 @@ import { HomePage } from "../page-objects/Home.page";
 import { LoginPage } from "../page-objects/Login.page";
 
 // Declare fixture types
-type HomePageFixtures = {
+type LoginFixtures = {
   _loginPage: LoginPage;
   _homePage: HomePage;
 };
 
-export const extendedTest = test.extend<HomePageFixtures>({
+export const extendedTest = test.extend<LoginFixtures>({
   _loginPage: async ({ page }, use) => {
     // Use the fixture value in the test.
     await use(new LoginPage(page));
